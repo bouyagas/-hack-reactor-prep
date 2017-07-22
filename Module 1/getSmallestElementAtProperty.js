@@ -1,9 +1,9 @@
 function getSmallestElementAtProperty(obj, key) {
     var min;
     if ((typeof obj[key] != "undefined") && Array.isArray(obj[key]) && obj[key].length > 0) {
-        min = Math.min(...obj[key])
+      min = Math.min(...obj[key]);
     }
-    
+
     return min;
 }
 
