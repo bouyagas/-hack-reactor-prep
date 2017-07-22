@@ -5,7 +5,7 @@ function sumDigits(num) {
   while (i < strnum.length) {
     if (strnum[i] != '-') {
       sum += parseInt(strnum[i]);
-      i++
+      i++;
     } else {
       sum -= parseInt(strnum[i+1]);
       i+=2;

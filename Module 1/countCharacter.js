@@ -3,5 +3,17 @@ function countCharacter(str, char) {
   return 0;
 }
 
-var output = countCharacter('I am a hacker', ' ');
+// second way
+function countCharacter(str, char) {
+  var arrStr = str.split(''),
+      countStr = 0;
+    for (var i = 0; i < arrStr.length; i++) {
+       (arrStr[i] === char) ? countStr++ : undefined;
+    }
+    return countStr;
+}
+
+var output = countCharacter('I am a hacker', 'a');
 console.log(output); // --> 3
+
+

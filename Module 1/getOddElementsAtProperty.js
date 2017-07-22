@@ -12,6 +12,18 @@ function getOddElementsAtProperty(obj, key) {
     return arr;
 }
 
+// const getOddElementsAtProperty = (obj, key) => {
+//   // your code here
+//   if((obj[key] !== 'undefined') && Array.isArray(obj[key]) && obj[key].length > 0) {
+//     var oddArr = obj[key].filter((elem) => {
+//        return elem % 2 !== 0;
+//     });
+//     return oddArr;
+//   } else {
+//     return [];
+//   }
+// };
+
 var obj = {
     key: [1, 2, 3, 4, 5]
 };

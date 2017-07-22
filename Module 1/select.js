@@ -7,6 +7,16 @@ function select(arr, obj) {
     }
     return newObj;
 }
+
+// function select(arr, obj) {
+//   var newObj = {};
+//   for (var i = 0; i < arr.length; i++) {
+//     (typeof obj[arr[i]] !== 'undefined') ? newObj[arr[i]] = obj[arr[i]] : undefined;
+//   }
+//   return newObj;
+// }
+
+
 var arr = ['a', 'c', 'e'];
 
 var obj = {

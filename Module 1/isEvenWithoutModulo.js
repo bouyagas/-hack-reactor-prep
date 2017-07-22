@@ -4,7 +4,7 @@ function modulo(num1, num2) {
   var mod = 0;
   if (Math.abs(num1) > 0) {
     var d = Math.floor(Math.abs(num1) / Math.abs(num2));
-    mod = Math.abs(num1) - (Math.abs(num2) * d)
+    mod = Math.abs(num1) - (Math.abs(num2) * d);
   }
 
   if (num1 < 0)

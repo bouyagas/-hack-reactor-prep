@@ -12,6 +12,18 @@ function getEvenLengthWordsAtProperty(obj, key) {
     return arr;
 }
 
+
+const  getEvenElementAtProperty(obj, key)  => {
+  // your code here
+   if((typeof obj[key] !== 'undefined') && Array.isArray(obj[key]) && obj[key].length > 0) {
+    var evenWord = obj[key].filter((elem) => {
+      return elem.length % 2 === 0;
+    });
+      return evenWord;
+   } else {
+    return [];
+  }
+}
 var obj = {
     key: ['a', 'long', 'game']
 };

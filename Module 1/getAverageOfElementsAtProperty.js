@@ -10,6 +10,23 @@ function getAverageOfElementsAtProperty(obj, key) {
     }
 }
 
+
+
+// another way
+
+const getAverageOfElementsAtProperty = (obj, key) => {
+  if ((typeof obj[key] != "undefined") && Array.isArray(obj[key]) && obj[key].length > 0) {
+      var result = obj[key].reduce((sum, value) => {
+        return sum + value;
+    });
+      return result / obj[key].length;
+  } else {
+    return 0;
+  }
+
+};
+
+
 var obj = {
     key: [1, 2, 3]
 };
